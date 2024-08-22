@@ -1,0 +1,6 @@
+RewriteEngine on
+ErrorDocument 404   http://127.0.0.1:80/-ECTD/kider-web/404.php
+
+# DISABLE DIRECTORY INDEXES
+
+Options -Indexes

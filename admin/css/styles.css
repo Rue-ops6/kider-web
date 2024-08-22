@@ -1,0 +1,40 @@
+.main {
+  border: 1px solid #595761;
+  border-radius: 10px;
+  background-color: #1c1b1e4c;
+}
+
+.main::before {
+  background-image: linear-gradient(90deg, #1647ae, #1d88da);
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.main::after {
+  background-image: linear-gradient(0deg, #f65629, #f67322, #ed9117);
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.main::after, .main::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 1000px;
+  z-index: -1;
+}
+
+.form-control-input {
+  border-radius: 2px !important;
+  border: 0 !important;
+  background-color: #37363e78 !important;
+  color: #5c5c62 !important
+}
+
+.form-control-input::placeholder {
+  color: #5c5c62 !important;
+}
